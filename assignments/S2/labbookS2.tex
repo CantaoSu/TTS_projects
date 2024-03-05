@@ -1,0 +1,36 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Do not alter this block (unless you're familiar with LaTeX)
+\documentclass{../labbook}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fill in the appropriate information below
+\lhead{YOUR NAME HERE}
+\rhead{Speech Synthesis I} 
+\chead{\textbf{Lab Book S2. Due: \textbf{FRI 08.12.2023 23:59} CET}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{mdframed}[backgroundcolor=blue!20]
+\LaTeX ~submissions are mandatory (when applicable). Submitting your assignment in another format will be graded no higher than R.
+\end{mdframed}
+
+\section{Lab Book S1}
+In this Lab Book you will work with prosody prediction form text. 
+
+\begin{problem}{1}{10}{Verbalizing with code}
+
+\subsubsection*{Task:}
+Take the phone numbers you found in the first lab book and verbalize them with a code. 
+For example, +31503638004 could become "PLUS THIRTY ONE FIVE OH THREE SIX THREE EIGHT OH OH FOUR".
+Note that grouping of the digits may differ: for example, the country code should be distinguished from the rest of the number:
+don't read a Macedonian (country code "+392") phone number +3921231231 as "PLUS THIRTY NINE TWENTY ONE...".
+
+Think of a digit grouping that a TTS system could adopt when reading the phone numbers out loud (\href{https://youtu.be/2OX8znJHNo0?si=EG2d8ElbaailUEhU}{here} is an example of digit groupings in American English)
+and introduce the phrase break or pause information by adding tokens <BR> for breaks or <PAU> for pauses where you feel necessary. 
+
+For example, a sentence "John, please come in" could be verbalized with additional prosodic information as "JOHN <BR> PLEASE <PAU> COME IN"
+
+Don't forget to comment in the code and explain how it works and please motivate your choice for the digit grouping. 
+Submit the code to the GitHub repository. 
+\end{problem}
+\end{document}
